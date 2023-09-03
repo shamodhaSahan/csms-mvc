@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1350.0" style="-fx-background-radius: 15px;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.csms.controller.SideBarController">
+   <left>
+      <Pane prefHeight="700.0" prefWidth="280.0" styleClass="navigation-layout" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="280.0" styleClass="profile-layout">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#userIconClick" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../image/icon/manager.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" prefHeight="150.0" prefWidth="170.0">
+                     <children>
+                        <Label fx:id="lblUserName" text="name" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Unicode MS" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblUserRank" text="rank" textFill="#939292">
+                           <font>
+                              <Font name="Arial Unicode MS" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="date" text="date" textFill="#939292">
+                           <font>
+                              <Font name="Arial Unicode MS" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox layoutY="155.0" prefHeight="545.0" prefWidth="280.0">
+               <children>
+                  <Button fx:id="btnDashBoard" alignment="CENTER" centerShape="false" graphicTextGap="85.0" layoutX="60.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#goDashBoardOnAction" prefHeight="50.0" prefWidth="270.0" styleClass="navigation-button" text="Dashboard" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icon/dashboard.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnCustomer" graphicTextGap="94.0" layoutX="60.0" mnemonicParsing="false" onAction="#goCustomerOnAction" prefHeight="50.0" prefWidth="270.0" styleClass="navigation-button" text="Customer" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icon/customer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnPlaceOrder" graphicTextGap="86.0" layoutX="60.0" mnemonicParsing="false" onAction="#goPlaceOrderOnAction" prefHeight="50.0" prefWidth="270.0" styleClass="navigation-button" text="Place order" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icon/placeorded.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnRepair" graphicTextGap="114.0" layoutX="60.0" mnemonicParsing="false" onAction="#goRepairOnAction" prefHeight="50.0" prefWidth="270.0" styleClass="navigation-button" text="Repair" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icon/repair.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnReport" graphicTextGap="113.0" layoutX="60.0" mnemonicParsing="false" onAction="#goReportsOnAction" prefHeight="50.0" prefWidth="270.0" styleClass="navigation-button" text="Report" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icon/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnLoginRecord" graphicTextGap="67.0" layoutX="60.0" mnemonicParsing="false" onAction="#goLoginRecordAction" prefHeight="50.0" prefWidth="270.0" styleClass="navigation-button" text="Login Record" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icon/loginrecord.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnUser" graphicTextGap="129.0" layoutX="60.0" mnemonicParsing="false" onAction="#goUserOnAction" prefHeight="50.0" prefWidth="270.0" styleClass="navigation-button" text="User" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icon/customer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnEmployee" graphicTextGap="90.0" layoutX="60.0" mnemonicParsing="false" onAction="#goEmployerOnAction" prefHeight="50.0" prefWidth="270.0" styleClass="navigation-button" text="Employee" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icon/customer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnSupplier" graphicTextGap="102.0" layoutX="60.0" mnemonicParsing="false" onAction="#goSupplierOnAction" prefHeight="50.0" prefWidth="270.0" styleClass="navigation-button" text="Supplier" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icon/customer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnSupplies" graphicTextGap="101.0" layoutX="60.0" mnemonicParsing="false" onAction="#goSuppliesOnAction" prefHeight="50.0" prefWidth="270.0" styleClass="navigation-button" text="Supplies" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icon/supplies.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnItem" graphicTextGap="130.0" layoutX="60.0" mnemonicParsing="false" onAction="#goItemOnAction" prefHeight="50.0" prefWidth="270.0" styleClass="navigation-button" text="Item" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icon/item.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button graphicTextGap="110.0" layoutX="60.0" mnemonicParsing="false" onAction="#logOutOnAction" prefHeight="50.0" prefWidth="270.0" styleClass="log-out-button" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/icon/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <AnchorPane fx:id="anc" prefHeight="700.0" prefWidth="1038.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <Pane fx:id="rightPane" prefWidth="32.0" styleClass="right-pane" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#exitOnAction" prefHeight="28.0" prefWidth="31.0" styleClass="exit-button">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icon/close.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </Pane>
+   </right>
+</BorderPane>

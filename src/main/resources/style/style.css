@@ -1,0 +1,200 @@
+.transparent{
+    -fx-background-color: transparent;
+}
+.parent{
+    -fx-background-color: #f5f5f5;
+}
+.parent-white{
+    -fx-background-color: #eff2f6;
+}
+.scroll-pane{
+    -fx-background: #eff2f6;
+    -fx-background-color: #eff2f6;
+}
+.chart-pane{
+    -fx-background-color: #b9b9b9;
+    -fx-background-radius: 10;
+}
+.card{
+    -fx-background-color: #fff;
+    -fx-background-radius: 10px;
+}
+.button:hover{
+    -fx-cursor: hand;
+}
+.right-pane{
+    -fx-background-color: #f5f5f5;
+    -fx-background-radius :  0px 15px 15px 0px;
+}
+.profile-layout{
+    -fx-background-color: #252525;
+    -fx-background-radius :  15px 0px 15px 0px;
+}
+.navigation-layout{
+    -fx-background-color: #090909;
+    -fx-background-radius :  15px 0px 0px 15px;
+}
+.navigation-button{
+    -fx-background-color : #090909;
+    -fx-background-radius :  30 0 0 30;
+    -fx-text-fill: #f5f5f5;
+    -fx-fill: #f5f5f5;
+}
+.navigation-button:hover{
+    -fx-background-color : linear-gradient(to right,#363636,#f5f5f5);
+    -fx-background-radius :  30 0 0 30;
+}
+.selected-navigation-button{
+    -fx-background-color : #EFF2F6;
+    -fx-background-radius :  30 0 0 30;
+    -fx-text-fill: #090909;
+    -fx-fill: #090909;
+}
+.selected-navigation-button:hover{
+    -fx-background-color : linear-gradient(to right,#00b000,#EFF2F6);
+    -fx-background-radius :  30 0 0 30;
+    -fx-text-fill: #090909;
+    -fx-fill: #090909;
+}
+.admin-button{
+    -fx-background-color : #090909;
+    -fx-background-radius :  30 0 0 30;
+}
+.admin-button:hover{
+    -fx-background-color : #00b000;
+    -fx-background-radius :  30 0 0 30;
+}
+.log-out-button{
+    -fx-background-color : #090909;
+    -fx-background-radius :  30 0 0 30;
+}
+.log-out-button:hover{
+    -fx-background-color : red;
+    -fx-background-radius :  30 0 0 30;
+}
+.gray-pane{
+    -fx-background-color: #727272;
+    -fx-background-radius: 10;
+}
+.exit-button{
+    -fx-background-color:   transparent;
+    -fx-background-radius: 100px;
+}
+.exit-button:hover{
+    -fx-background-color: #6c0000;
+    -fx-background-radius: 100px;
+}
+.white-pane{
+    -fx-background-color: #dcdde1;
+    -fx-background-radius: 10;
+}
+.yellow-pane{
+    -fx-background-color: #f9ca24;
+    -fx-border-color: #8B9804;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+}
+.red-pane{
+    -fx-background-color: #eb4d4b;
+    -fx-border-color: #fc4b4b;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+}
+.blue-pane{
+    -fx-background-color: #7ed6df;
+    -fx-border-color: #74bcf1;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+}
+.green-pane{
+    -fx-background-color:#44bd32;
+    -fx-border-color: #16AA16;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+}
+.green-text-Field{
+    -fx-border-radius: 5px;
+    -fx-background-color: #fff;
+    -fx-border-color:  #76ff03;
+    -fx-border-width:  0px 0px 2px 0px;
+    -fx-font-family: Arial Rounded MT Bold;
+    -fx-font-size: 14px;
+}
+.green-box-text-field{
+    -fx-background-radius: 5px;
+    -fx-border-color: #76ff03;
+    -fx-border-radius: 5px;
+    -fx-border-width:  2px;
+    -fx-text-fill: #000;
+    -fx-font-family: Arial Rounded MT Bold;
+    -fx-font-size: 14px;
+}
+.bar{
+    -fx-background-color:  #38b000;
+}
+.green-combo-box{
+    -fx-border-color: #76ff03;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width:  2px;
+    -fx-font-family: Arial Rounded MT Bold;
+    -fx-font-size: 14px;
+}
+.login-Pane{
+    -fx-background-color: #131313;
+    -fx-background-radius: 20px;
+    -fx-border-color: #000000;
+    -fx-border-width: 5px;
+    -fx-border-radius: 20px;
+}
+.login-Button{
+    -fx-background-radius: 90;
+    -fx-background-color: #38b000;
+}
+.login-Button:hover{
+    -fx-background-color: #1a5e00;
+    -fx-text-fill: #FEFEFE;
+}
+.login-text-Field{
+    -fx-background-color:  #131313;
+    -fx-border-color:  #38b000;
+    -fx-border-width:  0px 0px 2px 0px;
+    -fx-text-fill: #FEFEFE;
+    -fx-font-family: Arial Rounded MT Bold;
+    -fx-font-size: 14px;
+}
+.login-details-pane{
+    -fx-background-color: #f3f2f2;
+    -fx-background-radius: 0px 20px 20px 0px;
+}
+.main-Pane{
+    -fx-background-color: #000000;
+    -fx-background-radius: 20px;
+}
+.user-select-button{
+    -fx-background-color: #000000;
+    -fx-background-radius: 20px;
+    -fx-border-color: #f3f2f2;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+}
+.user-select-button:hover{
+    -fx-background-color: #76ff03;
+    -fx-text-fill: #f3f2f2;
+}
+.search{
+    -fx-background-color: #ffffff;
+    -fx-border-color: #000;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #000000;
+}
+

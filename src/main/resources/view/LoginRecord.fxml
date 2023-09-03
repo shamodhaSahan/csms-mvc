@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="anc" prefHeight="400.0" prefWidth="600.0" styleClass="transparent" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.csms.controller.LoginRecordFormController">
+   <children>
+      <Pane prefHeight="700.0" prefWidth="1038.0" styleClass="parent">
+         <children>
+            <Pane layoutX="20.0" layoutY="10.0" prefHeight="686.0" prefWidth="1018.0" style="-fx-background-color: #f5f5f5;">
+               <children>
+                  <TableView fx:id="tblLogin" layoutX="10.0" layoutY="10.0" prefHeight="662.0" prefWidth="998.0">
+                    <columns>
+                      <TableColumn fx:id="colLoginId" prefWidth="89.0" resizable="false" text="Login Id" />
+                      <TableColumn fx:id="colUserId" prefWidth="125.0" resizable="false" text="User Id" />
+                        <TableColumn fx:id="colUserName" prefWidth="166.0" resizable="false" text="User Name" />
+                        <TableColumn fx:id="colDateTime" prefWidth="211.0" resizable="false" text="Date &amp; Time" />
+                        <TableColumn fx:id="colTelNum" prefWidth="237.0" resizable="false" text="Telephone Number" />
+                        <TableColumn fx:id="colRank" prefWidth="201.0" resizable="false" text="Rank" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
